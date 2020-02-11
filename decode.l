@@ -1,19 +1,9 @@
 %%
-
-11  {
-    printf("c");
-}
-
-0/"11"*|0  {
-    printf("a");
-}
-
-01/11+|"01"*	{
-    printf("b");
-}
-
-.   {;}
-
+11		{ printf("c"); }
+01/(1{2})*[^1]	{ printf("b"); }
+0		{ printf("a"); }
+\n		{ printf("\n"); }
+.		{  }
 %%
 
 int main(void) {

@@ -1,6 +1,6 @@
 %%
 "#".*	{
-    printf("commentaire: %s", yytext);
+    printf("commentaire: \"%s\"\n", yytext);
 }
 
 [^#]*\n	{;}
